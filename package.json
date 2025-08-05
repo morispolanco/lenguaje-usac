@@ -1,0 +1,28 @@
+{
+  "name": "lenguaje-usac",
+  "version": "1.0.0",
+  "description": "Plataforma educativa para preparación del examen de lenguaje de la Universidad de San Carlos de Guatemala",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed for static files'",
+    "deploy": "vercel --prod",
+    "preview": "vercel",
+    "serve": "python3 -m http.server 3000 || python -m SimpleHTTPServer 3000"
+  },
+  "keywords": [
+    "education",
+    "guatemala",
+    "usac",
+    "language",
+    "exam-preparation"
+  ],
+  "author": "Lenguaje USAC Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

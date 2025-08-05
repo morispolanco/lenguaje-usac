@@ -1,0 +1,51 @@
+{
+  "name": "lenguaje-usac",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "SUPABASE_URL": "https://augrzzbvroycxdosamom.supabase.co",
+    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1Z3J6emJ2cm95Y3hkb3NhbW9tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQyODgxNTEsImV4cCI6MjA2OTg2NDE1MX0.QvZkp8c-zAioBX1VjBOzHVLh4BZtXNTgbiz6UfuNbKY",
+    "STRIPE_PUBLISHABLE_KEY": "pk_live_51JOLcwFlSFoL2Zh4SekRb1wkEsJTmKFycTZo7uxBmJ2FhclabFO7gbZp1q3WMsk7mNXqrPIti4dIoSXfNyosxSbO00k1QZ3GaN",
+    "STRIPE_PRICE_ID": "price_1RsCvfFlSFoL2Zh44D5nxCpx",
+    "GEMINI_API_KEY": "AIzaSyAzM-0NsO1tLMu6RHpQJSPBXUbJ0PjRj8E",
+    "APP_URL": "https://lenguaje-usac.vercel.app"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self' https://augrzzbvroycxdosamom.supabase.co https://js.stripe.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com https://generativelanguage.googleapis.com; img-src 'self' data: https://i.ibb.co https://checkout.stripe.com; script-src 'self' 'unsafe-inline' https://js.stripe.com https://cdn.jsdelivr.net https://lib.youware.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; connect-src 'self' https://augrzzbvroycxdosamom.supabase.co https://js.stripe.com https://api.youware.com https://generativelanguage.googleapis.com; frame-src 'self' https://checkout.stripe.com https://js.stripe.com;"
+        }
+      ]
+    }
+  ]
+}
